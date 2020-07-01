@@ -1,5 +1,8 @@
-package com.smps.springbootjpa;
+package com.smps.springbootjpa.service;
 
+import com.smps.springbootjpa.model.Student;
+import com.smps.springbootjpa.repository.StudentRepository;
+import com.smps.springbootjpa.model.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

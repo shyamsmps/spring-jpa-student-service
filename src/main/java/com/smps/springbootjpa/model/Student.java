@@ -1,4 +1,4 @@
-package com.smps.springbootjpa;
+package com.smps.springbootjpa.model;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -7,6 +7,7 @@ import java.util.Set;
 public class Student {
 
     @Id
+    @GeneratedValue()
     private Integer id;
 
     private String name;

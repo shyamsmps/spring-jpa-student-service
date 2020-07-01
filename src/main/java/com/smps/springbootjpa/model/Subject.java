@@ -1,4 +1,4 @@
-package com.smps.springbootjpa;
+package com.smps.springbootjpa.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -8,6 +8,7 @@ import javax.persistence.*;
 public class Subject {
 
     @Id
+    @GeneratedValue()
     private Integer id;
 
     private String subjectName;

@@ -1,5 +1,7 @@
-package com.smps.springbootjpa;
+package com.smps.springbootjpa.controller;
 
+import com.smps.springbootjpa.model.Subject;
+import com.smps.springbootjpa.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

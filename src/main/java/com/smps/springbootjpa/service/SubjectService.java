@@ -1,5 +1,8 @@
-package com.smps.springbootjpa;
+package com.smps.springbootjpa.service;
 
+import com.smps.springbootjpa.model.Student;
+import com.smps.springbootjpa.model.Subject;
+import com.smps.springbootjpa.repository.SubjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +25,14 @@ public class SubjectService {
 
     public Optional<Subject> getSubjectById(Integer id) {
         return subjectRepository.findById(id);
+    }
+
+    public List<Subject> getSubjectsByStudent(Student student) {
+        return subjectRepository.findByStudent(student);
+    }
+
+    public List<Subject> createSubjects(List<Subject> subjects) {
+        return subjectRepository.saveAll(subjects);
     }
 
 }
